@@ -8,9 +8,9 @@ export default function Home() {
       <div className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/24_2.008-55.JPG-Wk0AShBb2ee4HX1Nl72AOWVpnUpz35.jpeg"
+            src="/Site_Images/Yo-Yo Side.jpg"
             alt="MIT Engineering Project"
-            className="w-full h-full object-cover brightness-50"
+            className="w-full h-full object-cover brightness-50 bg-white"
           />
         </div>
         <div className="relative z-10 text-center text-white">
@@ -20,12 +20,12 @@ export default function Home() {
           <p className="mx-auto max-w-[700px] text-xl md:text-2xl text-gray-200 mb-8">Mechanical Engineering at MIT</p>
           <div className="space-x-4">
             <Link href="/about">
-              <Button size="lg" variant="default" className="text-lg">
+              <Button size="lg" variant="outline" className="text-lg">
                 About Me
               </Button>
             </Link>
             <Link href="/projects">
-              <Button size="lg" variant="outline" className="text-lg">
+              <Button size="lg" variant="default" className="text-lg text-white">
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

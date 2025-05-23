@@ -5,19 +5,10 @@ import { Badge } from "@/components/ui/badge"
 export default function AboutPage() {
   const currentClasses = [
     {
-      code: "2.671",
-      name: "Measurement and Instrumentation",
-      description: "Experimental techniques for mechanical engineering research and development.",
-    },
-    {
-      code: "2.750",
-      name: "Medical Device Design",
-      description: "Design and development of medical devices to address healthcare challenges.",
-    },
-    {
-      code: "2.679",
-      name: "Electronics for Mechanical System II",
-      description: "Advanced electronics integration in mechanical systems and applications.",
+      code: "TBD",
+      link: "",
+      name: "",
+      description: "Senior year coursework TBD...",
     },
   ]
 
@@ -25,55 +16,80 @@ export default function AboutPage() {
     "SolidWorks",
     "Fusion 360",
     "Python",
-    "JavaScript",
     "Arduino IDE",
     "MATLAB",
     "CAD",
     "CAM",
-    "3D Printing - FDM & SLS",
+    "3D Printing (FDM/SLS/SLA)",
     "Mill",
     "Lathe",
-    "Waterjet",
-    "CNC",
     "Laser Cutter",
+    "Injection Molding",
+    "KiCad",
+    //"PCB Design"
   ]
 
   const coursework = [
     {
+      code: "2.671",
+      link: "https://meche.mit.edu/featured-classes/measurement-and-instrumentation",
+      name: "Measurement and Instrumentation",
+      description: "Experimental techniques for mechanical engineering research and development.",
+    },
+    {
+      code: "2.750",
+      link: "https://meddevdesign.mit.edu/",
+      name: "Medical Device Design",
+      description: "Design and development of medical devices to address healthcare challenges.",
+    },
+    {
+      code: "2.679",
+      link: "https://meche.mit.edu/featured-classes/electronics-mechanical-systems-ii",
+      name: "Electronics for Mechanical System II",
+      description: "Advanced electronics integration in mechanical systems and applications, with a focus on PCB design.",
+    },
+    {
       code: "2.008",
+      link: "https://meche.mit.edu/featured-classes/design-and-manufacturing-ii",
       name: "Design and Manufacturing II",
       description:
-        "Applying DFA and DFM principles to design and manufacture 100 injection molded yo-yos in a team of 5.",
+        "Applied DFA and DFM principles to design and manufacture 50 injection molded yo-yos in a team.",
     },
     {
       code: "2.007",
+      link: "https://meche.mit.edu/featured-classes/design-and-manufacturing-i",
       name: "Design and Manufacturing I",
       description:
         "Individually designed and manufactured an aluminum robot to complete various tasks for a class competition, finishing in the top 32 of 147 students.",
     },
     {
       code: "2.001",
+      link: "https://meche.mit.edu/featured-classes/mechanics-and-materials-i",
       name: "Mechanics and Materials I",
       description:
         "Problem solving for statically determinate and indeterminate systems in axial loading, torsion, and bending.",
     },
     {
       code: "4.021",
+      link: "https://architecture.mit.edu/classes",
       name: "How to Design",
-      description: "Design principles and methodologies for engineering applications.",
+      description: "Dundamental design principles to demystify design and provide a basic introduction to all aspects of the design process.",
     },
     {
       code: "2.678",
+      link: "https://meche.mit.edu/featured-classes/electronics-mechanical-systems",
       name: "Electronics for Mechanical Systems",
       description: "Integration of electronics in mechanical systems design.",
     },
     {
       code: "2.003/4",
-      name: "Dynamics and Control I & II",
+      link: "https://meche.mit.edu/featured-classes/dynamics-and-control-i",
+      name: "Dynamics and Controls I & II",
       description: "Analysis and design of dynamic systems with feedback control.",
     },
     {
       code: "2.005",
+      link: "https://meche.mit.edu/featured-classes/thermal-fluids-engineering-i",
       name: "Thermal-Fluids I",
       description: "Fundamentals of thermodynamics and fluid mechanics.",
     },
@@ -81,38 +97,36 @@ export default function AboutPage() {
 
   return (
     <div className="container py-12 md:py-16 space-y-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
         <div>
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
           <p className="text-lg text-muted-foreground mb-6">
-            Mechanical Engineering Junior at MIT with a passion for design, prototyping, and innovation.
+            Senior at MIT studing Mechanical Engineering & Product Design.
           </p>
           <p className="mb-6">
-            I'm currently pursuing a Bachelor of Science in Mechanical Engineering at MIT with a GPA of 4.7/5.0. My
+            I'm currently pursuing a Bachelor of Science in Mechanical Engineering at MIT with a concentration in Product Design. My
             academic journey has equipped me with strong skills in mechanical design, manufacturing processes, and
             engineering analysis.
           </p>
           <p>
-            I'm particularly interested in the intersection of mechanical engineering with aerospace, defense, and
-            sustainable technologies. My experience spans from battery pack design to autonomous robotics and ionic
-            aircraft propulsion research.
+            I'm particularly interested in the intersection of mechanical engineering with design for manufacturing & assembly (DFM/DFA) and product development.
           </p>
         </div>
         <div className="flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-            <Image src="/placeholder.svg?height=320&width=320" alt="Servando Avalos" fill className="object-cover" />
+            <Image src="/Site_Images/Servando_Headshot.jpg" alt="Servando Avalos" fill className="object-cover" style={{ objectPosition: '70% center' }} />
           </div>
         </div>
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-6">Current Coursework</h2>
+        <h2 className="text-2xl font-bold mb-6">Future Coursework</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentClasses.map((course) => (
             <Card key={course.code}>
               <CardHeader>
-                <CardTitle>{course.code}</CardTitle>
-                <CardDescription>{course.name}</CardDescription>
+                <CardTitle><a href={course.link}>{course.code}</a></CardTitle>
+                <CardDescription><a href={course.link}>{course.name}</a></CardDescription>
               </CardHeader>
               <CardContent>
                 <p>{course.description}</p>
@@ -128,8 +142,8 @@ export default function AboutPage() {
           {coursework.map((course) => (
             <Card key={course.code} className="h-full">
               <CardHeader>
-                <CardTitle>{course.code}</CardTitle>
-                <CardDescription>{course.name}</CardDescription>
+                <CardTitle><a href={course.link}>{course.code}</a></CardTitle>
+                <CardDescription><a href={course.link}>{course.name}</a></CardDescription>
               </CardHeader>
               <CardContent>
                 <p>{course.description}</p>

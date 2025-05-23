@@ -26,27 +26,46 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
 
+    if (response.ok) {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      // Add this after successful submission
+      alert("Message sent successfully! Thank you for contacting me.");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } else {
+      throw new Error('Failed to submit form');
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
     toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    })
-
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
-    setIsSubmitting(false)
+      title: "Error",
+      description: "There was a problem sending your message. Please try again.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
   }
-
+};
   return (
     <div className="container py-12 md:py-16">
       <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
@@ -54,8 +73,8 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card>
           <CardHeader>
-            <CardTitle>Send a Message</CardTitle>
-            <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
+            <CardTitle>Send Me a Message</CardTitle>
+            <CardDescription>Fill out the form below and I'll get back to you as soon as possible!</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -117,23 +136,9 @@ export default function ContactPage() {
         <div className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
+              <CardTitle>Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <Mail className="h-5 w-5 mt-0.5 text-muted-foreground" />
-                <div>
-                  <h3 className="font-medium">Email</h3>
-                  <p className="text-muted-foreground">avalos10@mit.edu</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Phone className="h-5 w-5 mt-0.5 text-muted-foreground" />
-                <div>
-                  <h3 className="font-medium">Phone</h3>
-                  <p className="text-muted-foreground">(832) 964-5617</p>
-                </div>
-              </div>
               <div className="flex items-start space-x-4">
                 <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
                 <div>
@@ -168,8 +173,8 @@ export default function ContactPage() {
                   <h3 className="font-medium">Massachusetts Institute of Technology</h3>
                   <p className="text-muted-foreground">Bachelor of Science in Mechanical Engineering</p>
                   <div className="flex justify-between mt-1">
-                    <span className="text-sm text-muted-foreground">Expected May 2026</span>
-                    <span className="text-sm font-medium">GPA: 4.7/5.0</span>
+                    <span className="text-sm text-muted-foreground">Expected Graduation: May 2026</span>
+                    <span className="text-sm font-medium">GPA: 4.6/5.0</span>
                   </div>
                 </div>
               </div>
