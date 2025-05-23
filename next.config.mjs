@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+
   images: {
-    domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
+    unoptimized: true
+    //domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
   },
 };
 
