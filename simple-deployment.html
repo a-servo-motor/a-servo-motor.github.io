@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        
+        main {
+            padding: 4rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: #e9ecef;
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.875rem;
+            color: #495057;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MIT Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>MIT student showcasing engineering and design projects</p>
+        </section>
+
+        <section id="projects">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem; color: #2c3e50;">Projects</h2>
+            
+            <div class="projects">
+                <div class="project-card">
+                    <h3>SafeCASE - KULR Technology</h3>
+                    <p>Created an updated CAD design and drawings for a lithium-ion battery safety storage case.</p>
+                    <div class="tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Sheet Metal Design</span>
+                        <span class="tag">Technical Drawings</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>BB-2590 Battery Pack - KULR Technology</h3>
+                    <p>Designed a prototype 3p4s battery pack assembly according to MIL-SPEC standards.</p>
+                    <div class="tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Injection Molding</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Battery Design</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>ElectroAerodynamic Thruster Prototype - MIT LAE</h3>
+                    <p>Manufactured prototype for multi-stage ducted thruster research.</p>
+                    <div class="tags">
+                        <span class="tag">Laser Cutting</span>
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Rapid Prototyping</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Injection Molded Yo-Yos - MIT 2.008</h3>
+                    <p>Led team project to design and manufacture injection-molded yo-yos.</p>
+                    <div class="tags">
+                        <span class="tag">Injection Molding</span>
+                        <span class="tag">DFM</span>
+                        <span class="tag">DFA</span>
+                        <span class="tag">Manufacturing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MIT Portfolio. Published via scripts.mit.edu</p>
+        </div>
+    </footer>
+</body>
+</html>
