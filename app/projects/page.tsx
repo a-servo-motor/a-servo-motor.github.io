@@ -11,7 +11,7 @@ const projects = [
     company: "KULR Technology",
     description:
       "Created an updated CAD design and drawings for a lithium-ion battery safety storage case. Developed a new parametric model allowing for easily updating model measurements and being used as a base file for other similar designs.",
-    images: "/Site_Images/Kulr_Case.jpg",
+    images: process.env.NEXT_PUBLIC_BASE_PATH + '/Site_Images/Kulr_Case.jpg',
     tags: ["SolidWorks", "Sheet Metal Design", "Technical Drawings"],
     date: "Summer 2024",
   },
@@ -21,7 +21,7 @@ const projects = [
     company: "KULR Technology",
     description:
       "Designed a prototype 3p4s battery pack assembly according to MIL-SPEC standards and ideal injection molding processes. Created a CAD model and SLS printed case prototype.",
-    images: "/Site_Images/Kulr_Pack_CAD_Exploded.png",
+    images: process.env.NEXT_PUBLIC_BASE_PATH + '/Site_Images/Kulr_Pack_CAD_Exploded.png',
     tags: ["SolidWorks", "Prototyping", "Battery Assembly"],
     date: "Summer 2024",
   },
@@ -31,7 +31,7 @@ const projects = [
     company: "MIT LAE",
     description:
       "Manufactured prototype for the research of a multi-stage ducted (MSD) thruster as part of a revised solid-state ionic propelled aircraft design.",
-    images: "/Site_Images/EAD_CAD.png",
+    images: process.env.NEXT_PUBLIC_BASE_PATH + '/Site_Images/EAD_CAD.png',
     tags: ["Laser Cutting", "Rapid Prototyping", "SolidWorks"],
     date: "Fall 2023 - Spring 2024",
   },
@@ -42,7 +42,7 @@ const projects = [
     description:
       "Applied DFA and DFM principles to design and manufacture 50 injection molded yo-yos in a team of 5. Successfully implemented quality control measures throughout production.",
     images:
-      "/Site_Images/Yo-Yo Iso.jpg",
+      process.env.NEXT_PUBLIC_BASE_PATH + '/Site_Images/Yo-Yo Iso.jpg',
     tags: ["Injection Molding", "DFM", "DFA"],
     date: "Fall 2024",
   },

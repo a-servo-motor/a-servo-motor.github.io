@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import ImageSlider from "@/components/image-slider"
 
 // This would typically come from a database or CMS
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const projects = {
   "safecase-kulr": {
     title: "SafeCASE - KULR Technology",
@@ -19,7 +20,11 @@ const projects = {
 
       The resulting design serves as a base file for similar products and has been implemented in the company's product line.
     `,
-    images: ["/Site_Images/Kulr_Case.jpg", "/Site_Images/Kulr_Case_Exploded_Render.jpg", "/Site_Images/Kulr_Case_Exploded_Drawing.png"],
+    images: [
+      basePath + '/Site_Images/Kulr_Case.jpg',
+      basePath + '/Site_Images/Kulr_Case_Exploded_Render.jpg',
+      basePath + '/Site_Images/Kulr_Case_Exploded_Drawing.png',
+    ],
     tags: ["SolidWorks", "Sheet Metal Design", "Technical Drawings"],
     date: "Summer 2024",
   },
@@ -37,7 +42,11 @@ const projects = {
 
       The project resulted in a functional prototype that demonstrated the feasibility of the design for military applications.
     `,
-    images: ["/Site_Images/Kulr_Pack_CAD.png", "/Site_Images/Kulr_Pack_CAD_Exploded.png", "/Site_Images/Kulr_Pack_Render.jpg"],
+    images: [
+      basePath + '/Site_Images/Kulr_Pack_CAD.png',
+      basePath + '/Site_Images/Kulr_Pack_CAD_Exploded.png',
+      basePath + '/Site_Images/Kulr_Pack_Render.jpg',
+    ],
     tags: ["SolidWorks", "Injection Molding", "Prototyping", "Battery Design"],
     date: "Summer 2024",
   },
@@ -55,7 +64,10 @@ const projects = {
 
       This research contributed to ongoing research for the advancement of ionic propulsion technology in aircraft applications.
     `,
-    images: ["/Site_Images/EAD_CAD.png", "/Site_Images/EAD_MFG.png"],
+    images: [
+      basePath + '/Site_Images/EAD_CAD.png',
+      basePath + '/Site_Images/EAD_MFG.png',
+    ],
     tags: ["Laser Cutting", "SolidWorks", "Rapid Prototyping"],
     date: "Fall 2023 - Spring 2024",
   },
@@ -74,8 +86,12 @@ const projects = {
     `,
     //• Created detailed engineering analysis including FEA and mold flow simulations
 
-    images:
-      ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/24_2.008-55.JPG-Wk0AShBb2ee4HX1Nl72AOWVpnUpz35.jpeg", "/Site_Images/Yo-Yo Iso.jpg", "/Site_Images/Yo-Yo Side.jpg", "/Site_Images/Yo-Yo Front.jpg"],
+    images: [
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/24_2.008-55.JPG-Wk0AShBb2ee4HX1Nl72AOWVpnUpz35.jpeg',
+      basePath + '/Site_Images/Yo-Yo Iso.jpg',
+      basePath + '/Site_Images/Yo-Yo Side.jpg',
+      basePath + '/Site_Images/Yo-Yo Front.jpg',
+    ],
     tags: ["Injection Molding", "DFM", "DFA", "Manufacturing"],
     date: "Fall 2024",
   },

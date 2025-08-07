@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative h-[90vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/Site_Images/Yo-Yo Side.jpg"
+            src={process.env.NEXT_PUBLIC_BASE_PATH + '/Site_Images/Yo-Yo Side.jpg'}
             alt="MIT Engineering Project"
             className="w-full h-full object-cover brightness-50 bg-white"
           />
