@@ -5,8 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/servo-portfolio-live',
-  assetPrefix: '/servo-portfolio-live',
 }
 
 export default nextConfig

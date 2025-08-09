@@ -17,7 +17,7 @@ const projects = {
       • Traveled to Taiwan to support on-site prototype assembly, directly assisting in physical builds, documenting process feedback, and functional testing.
       • Assisted with changes in CAD for future system prototype builds based on test results from intial prototypes.
     `,
-    images: ['../../Site_Images/axon-logo.jpg'],
+    images: ['/Site_Images/axon-logo.jpg'],
     tags: ["Consumer Electronics", "Creo", "Prototyping"],
     date: "Summer 2025",
   },
@@ -34,7 +34,7 @@ const projects = {
 
       The resulting design serves as a base file for similar products and has been implemented in the company's product line.
     `,
-    images: ['../../Site_Images/Kulr_Case.jpg'],
+    images: ['/Site_Images/Kulr_Case.jpg'],
     tags: ["SolidWorks", "Sheet Metal Design", "Technical Drawings"],
     date: "Summer 2024",
   },
@@ -53,9 +53,9 @@ const projects = {
       The project resulted in a functional prototype that demonstrated the feasibility of the design for military applications.
     `,
     images: [
-     '../../Site_Images/Kulr_Pack_CAD.png',
-      '../../Site_Images/Kulr_Pack_CAD_Exploded.png',
-      '../../Site_Images/Kulr_Pack_Render.jpg',
+      '/Site_Images/Kulr_Pack_CAD.png',
+      '/Site_Images/Kulr_Pack_CAD_Exploded.png',
+      '/Site_Images/Kulr_Pack_Render.jpg',
     ],
     tags: ["SolidWorks", "Injection Molding", "Prototyping", "Battery Design"],
     date: "Summer 2024",
@@ -75,8 +75,8 @@ const projects = {
       This research contributed to ongoing research for the advancement of ionic propulsion technology in aircraft applications.
     `,
     images: [
-      '../../Site_Images/EAD_CAD.png',
-      '../../Site_Images/EAD_MFG.png',
+      '/Site_Images/EAD_CAD.png',
+      '/Site_Images/EAD_MFG.png',
     ],
     tags: ["Laser Cutting", "SolidWorks", "Rapid Prototyping"],
     date: "Fall 2023 - Spring 2024",
@@ -98,9 +98,9 @@ const projects = {
 
     images: [
       'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/24_2.008-55.JPG-Wk0AShBb2ee4HX1Nl72AOWVpnUpz35.jpeg',
-      '../../Site_Images/Yo-Yo Iso.jpg',
-      '../../Site_Images/Yo-Yo Side.jpg',
-      '../../Site_Images/Yo-Yo Front.jpg',
+      '/Site_Images/Yo-Yo Iso.jpg',
+      '/Site_Images/Yo-Yo Side.jpg',
+      '/Site_Images/Yo-Yo Front.jpg',
     ],
     tags: ["Injection Molding", "DFM", "DFA", "Manufacturing"],
     date: "Fall 2024",

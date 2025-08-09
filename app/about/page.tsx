@@ -129,7 +129,7 @@ export default function AboutPage() {
         </div>
         <div className="flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-            <Image src="../Site_Images/Servando_Headshot.jpg" alt="Servando Avalos" fill className="object-cover" style={{ objectPosition: '70% center' }} />
+            <Image src="/Site_Images/Servando_Headshot.jpg" alt="Servando Avalos" fill className="object-cover" style={{ objectPosition: '70% center' }} />
           </div>
         </div>
       </div>
