@@ -23,7 +23,7 @@ export default function Navbar() {
   const link = document.createElement('a');
   
   // Set the href to your PDF file in the public folder
-  link.href = '/Avalos_Servando_Resume.pdf'; // This points to public/Servando_Avalos_Resume.pdf
+  link.href = 'Site_Images/Resume_Website_Aug2025.pdf'; // This points to public/Servando_Avalos_Resume.pdf
   
   // Set the download attribute to force download instead of opening
   link.download = 'Avalos_Servando_Resume.pdf'; // This will be the downloaded filename
@@ -38,7 +38,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/">
-          <img src="/Site_Images/SA Logo - White.png" alt="Servando Avalos" className="h-10" />
+          <img src="Site_Images/SA Logo - White.png" alt="Servando Avalos" className="h-10" />
         </Link>
         <Link href="/" className="font-bold text-xl">
         </Link>
