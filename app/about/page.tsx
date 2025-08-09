@@ -5,10 +5,22 @@ import { Badge } from "@/components/ui/badge"
 export default function AboutPage() {
   const currentClasses = [
     {
-      code: "TBD",
-      link: "",
-      name: "",
-      description: "Senior year coursework TBD...",
+      code: "2.145",
+      link: "https://meche.mit.edu/featured-classes/design-compliant-mechanisms-machines-systems",
+      name: "Design of Compliatne Mechanisms, Machines, & Systems",
+      description: "Design, modeling and integration of compliance into systems that enable performance which is impractical to obtain via rigid mechanisms.",
+    },
+    {
+      code: "2.009",
+      link: "https://meche.mit.edu/featured-classes/product-engineering-process",
+      name: "Product Engineering Process",
+      description: "Experience working in teams to design and construct high-quality product prototypes while deveoping an understanding of product development.",
+    },
+    {
+      code: "2.96",
+      link: "https://orbit.mit.edu/classes/management-in-engineering-2.96",
+      name: "Management in Engineering",
+      description: "Focus on building individual skills in leadership, communication, and project management.",
     },
   ]
 
@@ -96,20 +108,23 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="container py-12 md:py-16 space-y-12">
+    <div className="mx-auto max-w-[1400px] px-8 md:px-12 py-12 md:py-16 space-y-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
         <div>
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
           <p className="text-lg text-muted-foreground mb-6">
-            Senior at MIT studing Mechanical Engineering & Product Design.
+            Senior at MIT studying Mechanical Engineering & Product Design.
           </p>
           <p className="mb-6">
             I'm currently pursuing a Bachelor of Science in Mechanical Engineering at MIT with a concentration in Product Design. My
             academic journey has equipped me with strong skills in mechanical design, manufacturing processes, and
             engineering analysis.
           </p>
-          <p>
+          <p className="mb-6">
             I'm particularly interested in the intersection of mechanical engineering with design for manufacturing & assembly (DFM/DFA) and product development.
+          </p>
+          <p>
+            Experience In: consumer electronics, injection molding processes, and product development.
           </p>
         </div>
         <div className="flex justify-center">
@@ -120,7 +135,7 @@ export default function AboutPage() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-6">Future Coursework</h2>
+        <h2 className="text-2xl font-bold mb-6">Current Coursework</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentClasses.map((course) => (
             <Card key={course.code}>
@@ -174,7 +189,7 @@ export default function AboutPage() {
         <ul className="space-y-2">
           <li className="flex items-baseline gap-2">
             <Badge variant="outline" className="shrink-0">
-              2022-2024
+              2022-2025
             </Badge>
             <span>Texas Petrochemicals Group Mark of Excellence Scholarship</span>
           </li>

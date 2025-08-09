@@ -36,11 +36,9 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 items-center justify-between">
         <Link href="/">
           <img src="Site_Images/SA Logo - White.png" alt="Servando Avalos" className="h-10" />
-        </Link>
-        <Link href="/" className="font-bold text-xl">
         </Link>
         <nav className="hidden md:flex gap-6 items-center nav-toggle-visible">
           <Link
@@ -55,12 +53,12 @@ export default function Navbar() {
           >
             Projects & Work
           </Link>
-          <Link
+          {/* <Link
             href="/contact"
             className={`text-sm font-medium transition-colors hover:text-primary ${isActive("/contact") ? "text-primary" : "text-white"}`}
           >
             Contact
-          </Link>
+          </Link> */}
           <Button variant="outline" size="sm" className="" onClick={handleResumeDownload}>
             <FileText className="h-4 w-4 mr-2" />
             Resume
@@ -72,11 +70,9 @@ export default function Navbar() {
         </Button>
         {isMenuOpen && (
           <div className="fixed inset-0 z-50 bg-background md:hidden nav-menu-bg">
-            <div className="container flex h-16 items-center">
+            <div className="container flex h-16 items-center justify-between">
               <Link href="/">
                 <img src="/Site_Images/SA Logo - White.png" alt="Servando Avalos" className="h-10" />
-              </Link>
-              <Link href="/" className="font-bold text-xl">
               </Link>
               <Button variant="ghost" size="icon" onClick={toggleMenu} className="nav-toggle-hidden">
                 <X className="h-6 w-6" />
@@ -90,9 +86,9 @@ export default function Navbar() {
               <Link href="/projects" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
                 Projects & Work
               </Link>
-              <Link href="/contact" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
+              {/* <Link href="/contact" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
                 Contact
-              </Link>
+              </Link> */}
               <Button
                 variant="outline"
                 onClick={() => {

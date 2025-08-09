@@ -6,6 +6,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const projects = [
   {
+    slug: "axon",
+    title: "Body Worn Camera",
+    company: "Axon Enterprise",
+    description:
+      "Created extensive test fixture for an unreleased Body Worn Camera's electronics.",
+    images: '../Site_Images/axon-logo.jpg',
+    tags: ["Consumer Electronics", "Creo", "Prototyping"],
+    date: "Summer 2025",
+  },
+  {
     slug: "safecase-kulr",
     title: "SafeCASE",
     company: "KULR Technology",
@@ -76,7 +86,7 @@ export default function ProjectsPage() {
       <Tabs defaultValue="projects" className="mb-12">
         <TabsList className="grid w-full grid-cols-2 mb-8">
           <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="work">Work Experience</TabsTrigger>
+          <TabsTrigger value="work">Other Work Experience</TabsTrigger>
         </TabsList>
 
         <TabsContent value="projects" className="space-y-8">

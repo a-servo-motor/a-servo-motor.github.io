@@ -6,6 +6,21 @@ import ImageSlider from "@/components/image-slider"
 
 // This would typically come from a database or CMS
 const projects = {
+  "axon": {
+    title: "Body Worn Camera - Axon Enterprise",
+    description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case. Developed a new parametric model allowing for easily updating model measurements and being used as a base file for other similar designs.",
+    fullDescription: `
+      As a Prototyping and Testing Engineering Intern at Axon Enterprise, I created an extensive test fixture for an unreleased Axon Body Worn Camera's electronics:
+
+      • Designed a test fixture with large assemnbly and manufacturing in mind - use by 50 teams globally.
+      • Experience working with dense consumer electronic assemblies in Creo.
+      • Traveled to Taiwan to support on-site prototype assembly, directly assisting in physical builds, documenting process feedback, and functional testing.
+      • Assisted with changes in CAD for future system prototype builds based on test results from intial prototypes.
+    `,
+    images: ['../../Site_Images/axon-logo.jpg'],
+    tags: ["Consumer Electronics", "Creo", "Prototyping"],
+    date: "Summer 2025",
+  },
   "safecase-kulr": {
     title: "SafeCASE - KULR Technology",
     description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case.",
