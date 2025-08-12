@@ -6,15 +6,35 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const projects = [
   {
-    slug: "axon",
-    title: "Body Worn Camera",
-    company: "Axon Enterprise",
+    slug: "ambulation",
+    title: "RFID Ambulation Tracker",
+    company: "MIT 2.75",
     description:
-      "Created extensive test fixture for an unreleased Body Worn Camera's electronics.",
-    images: '/Site_Images/axon-logo.jpg',
-    tags: ["Consumer Electronics", "Creo", "Prototyping"],
-    date: "Summer 2025",
+      "Developed a modular ambulation tracking system for post-operative patients in hospital settings.",
+    images: "/Site_Images/Wristband.jpg",
+    tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "RFID"],
+    date: "Spring 2025",
   },
+  {
+    slug: "2.679",
+    title: "ToF-Based 3D Scanner",
+    company: "MIT 2.679",
+    description:
+      "Prototyped a 3D scanner using a time-of-flight (ToF) sensor and a rotating base assembly.",
+    images: "/Site_Images/2679_iso_1.png",
+    tags: ["Raspberry Pi", "Python", "Fabrication"],
+    date: "Spring 2025",
+  },
+  // {
+  //   slug: "axon",
+  //   title: "Body Worn Camera",
+  //   company: "Axon Enterprise",
+  //   description:
+  //     "Created extensive test fixture for an unreleased Body Worn Camera's electronics.",
+  //   images: '/Site_Images/axon-logo.jpg',
+  //   tags: ["Consumer Electronics", "Creo", "Prototyping"],
+  //   date: "Summer 2025",
+  // },
   {
     slug: "safecase-kulr",
     title: "SafeCASE",
@@ -34,6 +54,16 @@ const projects = [
     images: '/Site_Images/Kulr_Pack_CAD_Exploded.png',
     tags: ["SolidWorks", "Prototyping", "Battery Assembly"],
     date: "Summer 2024",
+  },
+  {
+    slug: "2.007",
+    title: "MIT 2.007 Robot",
+    company: "MIT Design & Manufacturing I",
+    description:
+      "Individually designed and manufactured an aluminum robot to complete various tasks for a class competition.",
+    images: '/Site_Images/2.007_1.jpg',
+    tags: ["SolidWorks", "Sheet Metal Design", "Technical Drawings"],
+    date: "Spring 2024",
   },
   {
     slug: "electroaerodynamic-thruster",
@@ -58,6 +88,15 @@ const projects = [
 ]
 
 const workExperience = [
+  {
+    position: "Hardware Engineering Intern (R&D)",
+    company: "Axon Enterprise",
+    link: "https://www.axon.com/",
+    period: "Summer 2025",
+    description:
+      "Designed a test fixture for an unreleased Axon Body Worn Camera's electronics stackup with large assemnbly and manufacturing in mind for use by 50 teams globally. Traveled to Taiwan to support on-site prototype assembly, directly assisting in physical builds, documenting process feedback, and functional testing.",
+    skills: ["Consumer Electronics", "Creo Parametric", "Injection Molding Design", "Prototyping"],
+  },
   {
     position: "Prototyping and Testing Engineering Intern",
     company: "KULR Technology",

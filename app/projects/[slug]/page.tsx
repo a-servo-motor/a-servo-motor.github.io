@@ -6,21 +6,67 @@ import ImageSlider from "@/components/image-slider"
 
 // This would typically come from a database or CMS
 const projects = {
-  "axon": {
-    title: "Body Worn Camera - Axon Enterprise",
-    description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case. Developed a new parametric model allowing for easily updating model measurements and being used as a base file for other similar designs.",
+  "2.007": {
+    title: "MIT 2.007 Robot Competition",
+    description: "Individually designed and manufactured an aluminum robot to complete various tasks for a class competition.",
     fullDescription: `
-      As a Prototyping and Testing Engineering Intern at Axon Enterprise, I created an extensive test fixture for an unreleased Axon Body Worn Camera's electronics:
-
-      • Designed a test fixture with large assemnbly and manufacturing in mind - use by 50 teams globally.
-      • Experience working with dense consumer electronic assemblies in Creo.
-      • Traveled to Taiwan to support on-site prototype assembly, directly assisting in physical builds, documenting process feedback, and functional testing.
-      • Assisted with changes in CAD for future system prototype builds based on test results from intial prototypes.
+    Individually designed and manufactured an aluminum robot to complete v
+    Individually designed and manufactured an aluminum robot to complete v
     `,
-    images: ['/Site_Images/axon-logo.jpg'],
-    tags: ["Consumer Electronics", "Creo", "Prototyping"],
-    date: "Summer 2025",
+    images: ["/Site_Images/ambulation_presentation_2.jpg", "/Site_Images/ambulation_base.jpg", "/Site_Images/ambulation_stand_electronics.jpg", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.jpg"],
+    tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
+    date: "Spring 2024",
+    pdf: "",
+    youtube:"https://www.youtube.com/embed/WqrYSWyrIXY",
   },
+  "ambulation": {
+    title: "RFID-based Ambulation Tracking System",
+    description: "Developed an updated CAD design and drawings for a lithium-ion battery safety storage case.",
+    fullDescription: `
+    Developed a low-cost system for ambulation tracking that collects walking data for post-operative patients in medical-surgical wards with high nurse-to-patient ratios. 
+    Using this data, patients can be motivated to walk more, and healthcare teams can provide timely support, thereby reducing hospital stays, complications, and costs for both patients and hospitals.
+    `,
+    images: ["/Site_Images/ambulation_presentation_2.jpg", "/Site_Images/ambulation_base.jpg", "/Site_Images/ambulation_stand_electronics.jpg", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.jpg"],
+    tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
+    date: "Spring 2025",
+    pdf: "",
+    youtube:"",
+  },
+"2.679": {
+    title: "Time-of-Flight 3D Scanner",
+    description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case.",
+    fullDescription: `
+      As part of a class project for MIT's Electronics for Mechanical Systems II (2.679), I designed and prototyped a platform capable of:
+       • Rotate a base platform and lift a ToF Sensosr using stepper motor control. 
+       • Using distance measurements of a rotating object to create a 3D point cloud.
+       • Record and plot those points using Matplotlib on Python using a Raspberry Pi 4.
+    __________________________________________________________________________________________________________________
+    Further Work / Next Steps (ongoing):
+     • Recording more reliable stepper motor position using encoder data.
+     • Collecting more data points and implementing a Voxel filter on point cloud.
+     • Converting point clouds into meshes and exporting as STL files for 3D printing.
+    `,
+    images: ["/Site_Images/2679_iso_1.png", "/Site_Images/2679_iso_2.png", "/Site_Images/scanner_irl.jpg", "/Site_Images/3d_scanner_1.jpg", "/Site_Images/3d_scanner_2.jpg"],
+    tags: ["Raspberry Pi", "Python", "Fabrication"],
+    date: "Spring 2025",
+    pdf: "",
+    youtube:"",
+  },
+  // "axon": {
+  //   title: "Body Worn Camera - Axon Enterprise",
+  //   description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case. Developed a new parametric model allowing for easily updating model measurements and being used as a base file for other similar designs.",
+  //   fullDescription: `
+  //     As a Prototyping and Testing Engineering Intern at Axon Enterprise, I created an extensive test fixture for an unreleased Axon Body Worn Camera's electronics:
+
+  //     • Designed a test fixture with large assemnbly and manufacturing in mind - use by 50 teams globally.
+  //     • Experience working with dense consumer electronic assemblies in Creo.
+  //     • Traveled to Taiwan to support on-site prototype assembly, directly assisting in physical builds, documenting process feedback, and functional testing.
+  //     • Assisted with changes in CAD for future system prototype builds based on test results from intial prototypes.
+  //   `,
+  //   images: ['/Site_Images/axon-logo.jpg'],
+  //   tags: ["Consumer Electronics", "Creo", "Prototyping"],
+  //   date: "Summer 2025",
+  // },
   "safecase-kulr": {
     title: "SafeCASE - KULR Technology",
     description: "Created an updated CAD design and drawings for a lithium-ion battery safety storage case.",
@@ -37,6 +83,8 @@ const projects = {
     images: ['/Site_Images/Kulr_Case.jpg'],
     tags: ["SolidWorks", "Sheet Metal Design", "Technical Drawings"],
     date: "Summer 2024",
+    pdf: "",
+    youtube:"",
   },
   "bb2590-battery-pack": {
     title: "BB-2590 Battery Pack - KULR Technology",
@@ -59,6 +107,8 @@ const projects = {
     ],
     tags: ["SolidWorks", "Injection Molding", "Prototyping", "Battery Design"],
     date: "Summer 2024",
+    pdf: "",
+    youtube:"",
   },
   "electroaerodynamic-thruster": {
     title: "ElectroAerodynamic Thruster Prototype - MIT LAE",
@@ -80,6 +130,8 @@ const projects = {
     ],
     tags: ["Laser Cutting", "SolidWorks", "Rapid Prototyping"],
     date: "Fall 2023 - Spring 2024",
+    pdf: "",
+    youtube:"",
   },
   "design-manufacturing": {
     title: "Injection Molded Yo-Yos - MIT 2.008",
@@ -104,6 +156,8 @@ const projects = {
     ],
     tags: ["Injection Molding", "DFM", "DFA", "Manufacturing"],
     date: "Fall 2024",
+    pdf: "",
+    youtube:"",
   },
 }
 
@@ -154,6 +208,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </p>
               ))}
             </div>
+            <div> 
+              {project.pdf && (
+                <iframe
+                  src={project.pdf}
+                  width="100%"
+                  height="600px"
+                  style={{ border: "none" }}
+                ></iframe>
+              )}
+            </div>
+            <div className="grid place-items-center">
+            {project.youtube && (
+              <iframe
+                width="560"
+                height="315"
+                src={project.youtube}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
+          </div>
           </CardContent>
         </Card>
       </div>

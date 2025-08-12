@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, FileText } from "lucide-react"
 import { usePathname } from "next/navigation"
@@ -9,6 +9,29 @@ import { usePathname } from "next/navigation"
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  // Close menu when pathname changes (navigation)
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isMenuOpen])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -53,6 +76,12 @@ export default function Navbar() {
           >
             Projects & Work
           </Link>
+          <Link
+            href="/youtube"
+            className={`text-sm font-medium transition-colors hover:text-primary ${isActive("/youtube") ? "text-primary" : "text-white"}`}
+          >
+            YouTube Channel
+          </Link>
           {/* <Link
             href="/contact"
             className={`text-sm font-medium transition-colors hover:text-primary ${isActive("/contact") ? "text-primary" : "text-white"}`}
@@ -69,7 +98,7 @@ export default function Navbar() {
           <span className="sr-only">Toggle menu</span>
         </Button>
         {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-background/100 backdrop-blur-none md:hidden">
+          <div ref={menuRef} className="fixed inset-0 z-50 bg-background/100 backdrop-blur-none md:hidden">
             <div className="container flex h-16 items-center justify-between">
               <Link href="/">
                 <img src="/Site_Images/SA Logo - White.png" alt="Servando Avalos" className="h-10" />
@@ -85,6 +114,9 @@ export default function Navbar() {
               </Link>
               <Link href="/projects" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
                 Projects & Work
+              </Link>
+              <Link href="/youtube" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
+                YouTube Channel
               </Link>
               {/* <Link href="/contact" className="text-lg font-medium hover:text-primary" onClick={toggleMenu}>
                 Contact
