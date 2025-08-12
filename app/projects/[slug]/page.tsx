@@ -28,10 +28,10 @@ const projects = {
     Developed a low-cost system for ambulation tracking that collects walking data for post-operative patients in medical-surgical wards with high nurse-to-patient ratios. 
     Using this data, patients can be motivated to walk more, and healthcare teams can provide timely support, thereby reducing hospital stays, complications, and costs for both patients and hospitals.
     `,
-    images: ["/Site_Images/ambulation_presentation_2.jpg", "/Site_Images/ambulation_base.jpg", "/Site_Images/ambulation_stand_electronics.jpg", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.jpg"],
+    images: ["/Site_Images/ambulation_presentation_2.JPG", "/Site_Images/ambulation_base.JPG", "/Site_Images/ambulation_stand_electronics.JPG", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.JPG"],
     tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
     date: "Spring 2025",
-    pdf: "/Site_images/ambulation_report.pdf",
+    pdf: "/Site_images/Ambulation_Report.pdf",
     youtube:"",
   },
 "2.679": {
@@ -48,7 +48,7 @@ const projects = {
      • Collecting more data points and implementing a Voxel filter on point cloud.
      • Converting point clouds into meshes and exporting as STL files for 3D printing.
     `,
-    images: ["/Site_Images/2679_ISO_1.png", "/Site_Images/2679_ISO_2.png", "/Site_Images/scanner_irl.jpg", "/Site_Images/3d_scanner_1.jpg", "/Site_Images/3d_scanner_2.jpg"],
+    images: ["/Site_Images/2679_ISO_1.png", "/Site_Images/2679_ISO_2.png", "/Site_Images/scanner_irl.jpg", "/Site_Images/3d_scanner_1.JPG", "/Site_Images/3d_scanner_2.JPG"],
     tags: ["Raspberry Pi", "Python", "Fabrication"],
     date: "Spring 2025",
     pdf: "",
