@@ -10,21 +10,21 @@ const youtubeVideos = [
     title: "3D Printed UAV",
     description: "",
     youtubeEmbed: "https://www.youtube.com/embed/WqrYSWyrIXY",
-    tags: [""],
+    tags: ["Side Project"],
   },
   {
     id: "formlabs",
     title: "Formlabs Hackathon - Grilled Cheese Maker",
     description: "",
     youtubeEmbed: "https://www.youtube.com/embed/G4-ctfMp_y4",
-    tags: [""],
+    tags: ["Hackathon"],
   },
   {
     id: "formlabs",
     title: "MIT Arcturus - RoboBoat 2025",
     description: "Video won 3rd place out of 27 team videos at RoboBoat 2025 for Video Documentation.",
     youtubeEmbed: "https://www.youtube.com/embed/YlYUVPL47cQ",
-    tags: [""],
+    tags: ["Build Team"],
   },
 
 ]
@@ -33,7 +33,7 @@ export default function YouTubePage() {
   return (
     <div className="container py-12 md:py-16">
       <h1 className="text-4xl font-bold mb-8">YouTube Channel</h1>
-      <h3 className="mb-8">Here I enjoy posting more of my engineering projects.</h3>
+      <h3 className="mb-8">Here I enjoy posting more of my engineering projects and everything that goes into making them!</h3>
       {/* YouTube Channel Button */}
       <div className="flex mb-12">
         <a href="https://www.youtube.com/@lenservo" 
@@ -49,12 +49,12 @@ export default function YouTubePage() {
         </a>
       </div>
 
-      {/* YouTube Video Grid */}
-      <div className="mt-12">
+            {/* YouTube Video Grid */}
+            <div className="mt-12">
         <h2 className="text-2xl font-bold mb-6">Featured Videos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
           {youtubeVideos.map((video, index) => (
-            <div key={index} className="space-y-4">
+            <div key={index} className="space-y-4 w-full md:basis-[calc(33.333%-1rem)]">
               <div className="aspect-video w-full">
                 <iframe
                   width="100%"

@@ -129,44 +129,48 @@ export default function ProjectsPage() {
         </TabsList>
 
         <TabsContent value="projects" className="space-y-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {projects.map((project, index) => (
-              <Link href={`/projects/${project.slug}`} key={index}>
-                <Card className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={project.images || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <CardTitle>{project.title}</CardTitle>
-                    </div>
-                    <div className="flex justify-between items-start">
-                      <span className="text-xs text-white">{project.company}</span>
-                    </div>
-                    <div className="flex justify-between items-start">
-                      <span className="text-xs text-muted-foreground">{project.date}</span>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="line-clamp-3">{project.description}</p>
-                  </CardContent>
-                  <CardFooter className="flex flex-wrap gap-1 p-3 pt-0">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </CardFooter>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </TabsContent>
+          <div className="flex flex-wrap justify-center gap-4">
+             {projects.map((project, index) => (
+              <Link
+                href={`/projects/${project.slug}`}
+                key={index}
+                className="w-full sm:basis-[calc(50%-0.5rem)] md:basis-[calc(33.333%-0.67rem)] lg:basis-[calc(25%-0.75rem)]"
+              >
+                 <Card className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow">
+                   <div className="relative h-48 w-full">
+                     <Image
+                       src={project.images || "/placeholder.svg"}
+                       alt={project.title}
+                       fill
+                       className="object-cover"
+                     />
+                   </div>
+                   <CardHeader>
+                     <div className="flex justify-between items-start">
+                       <CardTitle>{project.title}</CardTitle>
+                     </div>
+                     <div className="flex justify-between items-start">
+                       <span className="text-xs text-white">{project.company}</span>
+                     </div>
+                     <div className="flex justify-between items-start">
+                       <span className="text-xs text-muted-foreground">{project.date}</span>
+                     </div>
+                   </CardHeader>
+                   <CardContent className="flex-grow">
+                     <p className="line-clamp-3">{project.description}</p>
+                   </CardContent>
+                   <CardFooter className="flex flex-wrap gap-1 p-3 pt-0">
+                     {project.tags.map((tag) => (
+                       <Badge key={tag} variant="outline" className="text-xs">
+                         {tag}
+                       </Badge>
+                     ))}
+                   </CardFooter>
+                 </Card>
+               </Link>
+             ))}
+           </div>
+         </TabsContent>
 
         <TabsContent value="work" className="space-y-8">
           {workExperience.map((job, index) => (

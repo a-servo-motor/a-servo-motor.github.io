@@ -10,14 +10,16 @@ const projects = {
     title: "MIT 2.007 Robot Competition",
     description: "Individually designed and manufactured an aluminum robot to complete various tasks for a class competition.",
     fullDescription: `
-    Individually designed and manufactured an aluminum robot to complete v
-    Individually designed and manufactured an aluminum robot to complete v
+    • Individually designed and manufactured a remote controled aluminum robot.
+    • Programmed an 'autonomous' portion using Arduino Nano.
+    • Successfully completed gameboard tasks including tilting a large platform and removing acrylic rods.
+    • Finished competition in the top 32 of ~200 students.
     `,
-    images: ["/Site_Images/ambulation_presentation_2.jpg", "/Site_Images/ambulation_base.jpg", "/Site_Images/ambulation_stand_electronics.jpg", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.jpg"],
-    tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
+    images: ["/Site_Images/2.007_1.jpg", "/Site_Images/2.007_2.jpg", "/Site_Images/2.007_3.jpg"],
+    tags: ["Sheet Metal", "Solidworks", "Arduino", "Hardware"],
     date: "Spring 2024",
     pdf: "",
-    youtube:"https://www.youtube.com/embed/WqrYSWyrIXY",
+    youtube:"",
   },
   "ambulation": {
     title: "RFID-based Ambulation Tracking System",
@@ -29,7 +31,7 @@ const projects = {
     images: ["/Site_Images/ambulation_presentation_2.jpg", "/Site_Images/ambulation_base.jpg", "/Site_Images/ambulation_stand_electronics.jpg", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.jpg"],
     tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
     date: "Spring 2025",
-    pdf: "",
+    pdf: "/Site_images/ambulation_report.pdf",
     youtube:"",
   },
 "2.679": {

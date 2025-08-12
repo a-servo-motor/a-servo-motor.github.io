@@ -54,19 +54,21 @@ export default function ImageSlider({ images, alt, className = "" }: ImageSlider
       {images.length > 1 && (
         <>
           <Button
-            variant="outline"
+            variant="default"
             size="icon"
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-primary/60 hover:bg-primary/80 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
             onClick={goToPrevious}
+            aria-label="Previous image"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
 
           <Button
-            variant="outline"
+            variant="default"
             size="icon"
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary/60 hover:bg-primary/80 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
             onClick={goToNext}
+            aria-label="Next image"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
