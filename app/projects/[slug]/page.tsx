@@ -48,7 +48,7 @@ const projects = {
      • Collecting more data points and implementing a Voxel filter on point cloud.
      • Converting point clouds into meshes and exporting as STL files for 3D printing.
     `,
-    images: ["/Site_Images/2679_iso_1.png", "/Site_Images/2679_iso_2.png", "/Site_Images/scanner_irl.jpg", "/Site_Images/3d_scanner_1.jpg", "/Site_Images/3d_scanner_2.jpg"],
+    images: ["/Site_Images/2679_ISO_1.png", "/Site_Images/2679_ISO_2.png", "/Site_Images/scanner_irl.jpg", "/Site_Images/3d_scanner_1.jpg", "/Site_Images/3d_scanner_2.jpg"],
     tags: ["Raspberry Pi", "Python", "Fabrication"],
     date: "Spring 2025",
     pdf: "",

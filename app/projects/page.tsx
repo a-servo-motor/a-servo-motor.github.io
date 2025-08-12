@@ -21,7 +21,7 @@ const projects = [
     company: "MIT 2.679",
     description:
       "Prototyped a 3D scanner using a time-of-flight (ToF) sensor and a rotating base assembly.",
-    images: "/Site_Images/2679_iso_1.png",
+    images: "/Site_Images/2679_ISO_1.png",
     tags: ["Raspberry Pi", "Python", "Fabrication"],
     date: "Spring 2025",
   },
