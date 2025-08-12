@@ -31,7 +31,7 @@ const projects = {
     images: ["/Site_Images/ambulation_presentation_2.JPG", "/Site_Images/ambulation_base.JPG", "/Site_Images/ambulation_stand_electronics.JPG", "/Site_Images/Wristband.jpg", "/Site_Images/ambulation_presentation_1.JPG"],
     tags: ["Raspberry Pi", "Python", "Hardware Web Integration", "UHF/RFID"],
     date: "Spring 2025",
-    pdf: "/Site_images/Ambulation_Report.pdf",
+    pdf: "/Site_Images/Ambulation_Report.pdf",
     youtube:"",
   },
 "2.679": {
