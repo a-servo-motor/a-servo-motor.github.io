@@ -82,7 +82,7 @@ const projects = {
     description: "User-friendly software-free fabric printer designed to transfer digital designs directly over embroidery hoops.",
     fullDescription: `
     • Worked in a team of 15 to develop a consumer-grade 2-axis printer designed to automate the transfer of embroidery patterns onto fabric.
-    • Used Canny Edge Detection and OpenCV to implement on-board impage processing on our device. 
+    • Used Canny Edge Detection and OpenCV to implement on-board image processing on our device. 
     • Presented in a final presentation with +1200 guests in a final product showcase. 
     `,
     images: ["/Site_Images/scribbly-hero.png", "/Site_Images/2.009_self.JPG"],
