@@ -85,7 +85,7 @@ const projects = {
     • Used Canny Edge Detection and OpenCV to implement on-board impage processing on our device. 
     • Presented in a final presentation with +1200 guests in a final product showcase. 
     `,
-    images: ["/Site_Images/scribbly-hero.png", "/Site_Images/2.009_self.jpg"],
+    images: ["/Site_Images/scribbly-hero.png", "/Site_Images/2.009_self.JPG"],
     tags: ["Image Processing", "Hardware Integration", "Presentation"],
     date: "Fall 2025",
     pdf: "/Site_Images/red-product-sheet.pdf",
