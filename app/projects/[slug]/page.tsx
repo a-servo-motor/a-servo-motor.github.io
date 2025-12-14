@@ -6,6 +6,91 @@ import ImageSlider from "@/components/image-slider"
 
 // This would typically come from a database or CMS
 const projects = {
+  "cbd": {
+    title: "Thermal and Force Load Isolation",
+    description: ".",
+    fullDescription: `
+     Prototype
+    • Designed a flexure-based kinematic coupling that provides exact 6 DOF constraint without over-constraining the system. 
+    • By utilizing tangential flexures, the design accommodates radial thermal expansion while keeping the payload perfectly centered.
+    • Fabricated a functional prototype using acrylic and polypropylene to validate the design's ability to maintain optical centering during thermal expansion.
+    `,
+    images: ["/Site_Images/thermal_load_isolation.png"],
+    tags: ["Waterjet", "Constraint-Based Design"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/MPS1 Write Up.pdf",
+    youtube:"",
+  },
+  "crashpad": {
+    title: "Soft-Stop Compliant Mechanism",
+    description: ".",
+    fullDescription: `
+    • Designed a "soft-stop" crash pad capable of modelind the absorption of  kinetic energy of a moving ASML wafer stage using 3D-printed TPU. 
+    • The goal was to maximize energy absorption within a limited travel distance without exceeding a specific maximum force, requiring a non-linear stiffness response.
+    • Utilized parametric stiffness matrices to model the behavior of an array of linear compliant elements connected in a grid.
+    `,
+    images: ["/Site_Images/crashpad.png"],
+    tags: ["3D Print", "Stiffness Matrices", "Laser Cutting", "Prototyping"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/MPS4 Write Up.pdf",
+    youtube:"",
+  },
+  "screw": {
+    title: "Freedom and Constraint Topology - Screw DOF",
+    description: ".",
+    fullDescription: `
+    • Engineered a swappable constraint system that allowed the device to mechanically switch between two distinct screw pitches 0.6 mm/deg and 1.8 mm/deg.
+    • Fabricated a functional prototype using acrylic flexures and polypropylene bodies to validate the stiffness and kinematic trajectory over the required 3-degree range of motion.
+    • Built prototypes using laser-cut acrylic and wood bases to verify functionality.
+    `,
+    images: ["/Site_Images/screw_cm2.png"],
+    tags: ["Waterjet", "Laser Cutting", "FACT","Prototyping"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/MPS2 Write Up.pdf",
+    youtube:"",
+  },
+  "pencil": {
+    title: "Bistable Pencil Launcher",
+    description: ".",
+    fullDescription: `
+    • Engineered & 3D-printed a PLA bistable mechanism based launcher to shoot a pencil over a 1.5 m vertical barrier.
+    • Optimized energy storage and release by designing a snap-through buckling mechanism that maximized horizontal range while considering frictional losses.
+    • Ensured repeatability within a 200mm landing radius.
+    `,
+    images: ["/Site_Images/pencil_launcher.png"],
+    tags: ["3D Print", "Iterating", "Projectiles", "Prototyping"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/MPS5 Write Up.pdf",
+    youtube:"",
+  },
+  "egg": {
+    title: "Egg Gripper Compliant Mechanism",
+    description: "Compliant Mechanism",
+    fullDescription: `
+    • Designed a compliant gripper capable of manipulating fragile raw eggs using the Pseudo-Rigid Body Model (PRBM) to predict flexure behavior.
+    • The critical constraint was to achieve the necessary grip force—high enough to prevent slipping, but low enough to prevent crushing without using foam padding.
+    • Fabricated using waterjet ABS sheets.
+    `,
+    images: ["/Site_Images/Egg Gripper.png"],
+    tags: ["Waterjet", "Waterjet Calibration", "PRBM", "Prototyping"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/MPS3 Write Up.pdf",
+    youtube:"",
+  },
+  "embroidery": {
+    title: "Embroidery Pattern Transfer Machine",
+    description: "User-friendly software-free fabric printer designed to transfer digital designs directly over embroidery hoops.",
+    fullDescription: `
+    • Worked in a team of 15 to develop a consumer-grade 2-axis printer designed to automate the transfer of embroidery patterns onto fabric.
+    • Used Canny Edge Detection and OpenCV to implement on-board impage processing on our device. 
+    • Presented in a final presentation with +1200 guests in a final product showcase. 
+    `,
+    images: ["/Site_Images/scribbly-hero.png", "/Site_Images/2.009_self.jpg"],
+    tags: ["Image Processing", "Hardware Integration", "Presentation"],
+    date: "Fall 2025",
+    pdf: "/Site_Images/red-product-sheet.pdf",
+    youtube:"https://www.009cycles.com/webcast",
+  },
   "2.007": {
     title: "MIT 2.007 Robot Competition",
     description: "Individually designed and manufactured an aluminum robot to complete various tasks for a class competition.",

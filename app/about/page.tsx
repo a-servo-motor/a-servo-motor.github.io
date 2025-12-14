@@ -5,23 +5,11 @@ import { Badge } from "@/components/ui/badge"
 export default function AboutPage() {
   const currentClasses = [
     {
-      code: "2.145",
-      link: "https://meche.mit.edu/featured-classes/design-compliant-mechanisms-machines-systems",
-      name: "Design of Compliatne Mechanisms, Machines, & Systems",
-      description: "Design, modeling and integration of compliance into systems that enable performance which is impractical to obtain via rigid mechanisms.",
-    },
-    {
-      code: "2.009",
-      link: "https://meche.mit.edu/featured-classes/product-engineering-process",
-      name: "Product Engineering Process",
-      description: "Experience working in teams to design and construct high-quality product prototypes while deveoping an understanding of product development.",
-    },
-    {
-      code: "2.96",
-      link: "https://orbit.mit.edu/classes/management-in-engineering-2.96",
-      name: "Management in Engineering",
-      description: "Focus on building individual skills in leadership, communication, and project management.",
-    },
+      code: "Spring 2026 TBD",
+      link: "",
+      name: "",
+      description: "",
+    }
   ]
 
   const skills = [
@@ -42,6 +30,24 @@ export default function AboutPage() {
   ]
 
   const coursework = [
+    {
+      code: "2.145",
+      link: "https://meche.mit.edu/featured-classes/design-compliant-mechanisms-machines-systems",
+      name: "Design of Compliant Mechanisms, Machines, & Systems",
+      description: "Design, modeling and integration of compliance into systems that enable performance which is impractical to obtain via rigid mechanisms.",
+    },
+    {
+      code: "2.009",
+      link: "https://meche.mit.edu/featured-classes/product-engineering-process",
+      name: "Product Engineering Process",
+      description: "Experience working in teams to design and construct high-quality product prototypes while deveoping an understanding of product development.",
+    },
+    {
+      code: "2.96",
+      link: "https://orbit.mit.edu/classes/management-in-engineering-2.96",
+      name: "Management in Engineering",
+      description: "Focus on building individual skills in leadership, communication, and project management through a semester-long business plan project.",
+    },
     {
       code: "2.671",
       link: "https://meche.mit.edu/featured-classes/measurement-and-instrumentation",

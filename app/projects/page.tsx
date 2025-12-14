@@ -5,10 +5,70 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const projects = [
+    {
+    slug: "embroidery",
+    title: "Embroidery Pattern Printer",
+    company: "MIT 2.009 - Product Engineering Process",
+    description:
+      "",
+    images: "/Site_Images/scribbly-hero.png",
+    tags: ["Image Processing", "Hardware Integration", "Presentation"],
+    date: "Fall 2025",
+  },
+  {
+    slug: "pencil",
+    title: "Bistable Pencil Launcher",
+    company: "MIT 2.145 - Compliant Mechanisms",
+    description:
+      "",
+    images: "/Site_Images/pencil_launcher.png",
+    tags: ["3D Print", "Iterating", "Projectiles", "Prototyping"],
+    date: "Fall 2025",
+  },
+    {
+    slug: "crashpad",
+    title: "Soft-Stop Mechanism",
+    company: "MIT 2.145 - Compliant Mechanisms",
+    description:
+      "",
+    images: "/Site_Images/crashpad.png",
+    tags: ["3D Print", "Stiffness Matrices", "Laser Cutting", "Prototyping"],
+    date: "Fall 2025",
+  },
+     {
+    slug: "egg",
+    title: "Compliant Egg Gripper - PRBM",
+    company: "MIT 2.145 - Compliant Mechanisms",
+    description:
+      "",
+    images: "/Site_Images/Egg Gripper.png",
+    tags: ["Waterjet", "Waterjet Calibration", "PRBM", "Prototyping"],
+    date: "Fall 2025",
+  },
+  {
+    slug: "screw",
+    title: "Screw DOF Platform",
+    company: "MIT 2.145 - Compliant Mechanisms",
+    description:
+      "",
+    images: "/Site_Images/screw.png",
+    tags: ["Waterjet", "Laser Cutting", "FACT","Prototyping"],
+    date: "Fall 2025",
+  },
+    {
+    slug: "cbd",
+    title: "Thermal and Force Load Isolation",
+    company: "MIT 2.145 - Compliant Mechanisms",
+    description:
+      "",
+    images: "/Site_Images/thermal_load_isolation.png",
+    tags: ["Waterjet", "Constraint-Based Design"],
+    date: "Fall 2025",
+  },
   {
     slug: "ambulation",
     title: "RFID Ambulation Tracker",
-    company: "MIT 2.75",
+    company: "MIT 2.75 - Medical Device Design",
     description:
       "Developed a modular ambulation tracking system for post-operative patients in hospital settings.",
     images: "/Site_Images/Wristband.jpg",
@@ -89,6 +149,15 @@ const projects = [
 
 const workExperience = [
   {
+    position: "MIT 2.008 Lab Assistant",
+    company: "MIT LMP",
+    link: "https://meche.mit.edu/featured-classes/design-and-manufacturing-ii",
+    period: "Fall 2025",
+    description:
+      "Guided 2 teams in iterating and manufacturing 50 Yo-Yos each in a fast-paced shop space as a lab assistant.",
+    skills: ["Machining", "Injection Molding", "Shop Assistant"],
+  },
+  {
     position: "Hardware Engineering Intern (R&D)",
     company: "Axon Enterprise",
     link: "https://www.axon.com/",
@@ -120,12 +189,12 @@ const workExperience = [
 export default function ProjectsPage() {
   return (
     <div className="container py-12 md:py-16">
-      <h1 className="text-4xl font-bold mb-8">Projects & Work Experience</h1>
+      <h1 className="text-4xl font-bold mb-8">Projects & Experience</h1>
 
       <Tabs defaultValue="projects" className="mb-12">
         <TabsList className="grid w-full grid-cols-2 mb-8">
           <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="work">Work Experience</TabsTrigger>
+          <TabsTrigger value="work">Teaching & Work Experience</TabsTrigger>
         </TabsList>
 
         <TabsContent value="projects" className="space-y-8">
