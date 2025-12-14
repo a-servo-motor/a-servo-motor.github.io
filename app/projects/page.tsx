@@ -194,7 +194,7 @@ export default function ProjectsPage() {
       <Tabs defaultValue="projects" className="mb-12">
         <TabsList className="grid w-full grid-cols-2 mb-8">
           <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="work">Teaching & Work Experience</TabsTrigger>
+          <TabsTrigger value="work">Experience</TabsTrigger>
         </TabsList>
 
         <TabsContent value="projects" className="space-y-8">
