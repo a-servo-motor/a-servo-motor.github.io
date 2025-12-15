@@ -46,7 +46,7 @@ export default function Navbar() {
   const link = document.createElement('a');
   
   // Set the href to your PDF file in the public folder
-  link.href = '/Site_Images/Resume_Website_Aug2025.pdf'; // This points to public/Servando_Avalos_Resume.pdf
+  link.href = '/Site_Images/Resume_Website_Dec2025.pdf'; // This points to public/Servando_Avalos_Resume.pdf
   
   // Set the download attribute to force download instead of opening
   link.download = 'Avalos_Servando_Resume.pdf'; // This will be the downloaded filename

@@ -154,7 +154,7 @@ const workExperience = [
     link: "https://meche.mit.edu/featured-classes/design-and-manufacturing-ii",
     period: "Fall 2025",
     description:
-      "Guided 2 teams in iterating and manufacturing 50 Yo-Yos each in a fast-paced shop space as a lab assistant.",
+      "Guided 2 student teams in iterating and manufacturing 50 Yo-Yos each in a fast-paced shop space as a lab assistant.",
     skills: ["Machining", "Injection Molding", "Shop Assistant"],
   },
   {
