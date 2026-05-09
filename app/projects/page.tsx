@@ -5,6 +5,16 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const projects = [
+  {
+    slug: "stirling",
+    title: "Stirling Engine",
+    company: "MIT Pappalardo Apprentice",
+    description:
+      "",
+    images: "/Site_Images/Stirling_Engine/SA_003.jpg",
+    tags: ["Machining", "Mill", "Lathe"],
+    date: "Spring 2026",
+  },
     {
     slug: "embroidery",
     title: "Embroidery Pattern Printer",
@@ -148,6 +158,15 @@ const projects = [
 ]
 
 const workExperience = [
+  {
+    position: "MIT 2.007 Pappalardo Apprentice (Undergraduate Assistant)",
+    company: "MIT Pappalardo Lab",
+    link: "https://meche.mit.edu/featured-classes/pappalardo-lab-apprentice",
+    period: "Spring 2026",
+    description:
+      "Mentored undergraduate students in the 2.007 design and manufacturing course, providing hands-on instruction in manual machining, hand-tool operation, and safe shop practices. Independently machined a precision Stirling engine, calculating optimal speeds and feeds using standard engineering literature.",
+    skills: ["Machining", "Injection Molding", "Shop Assistant"],
+  },
   {
     position: "MIT 2.008 Lab Assistant",
     company: "MIT LMP",

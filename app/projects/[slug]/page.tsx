@@ -6,6 +6,19 @@ import ImageSlider from "@/components/image-slider"
 
 // This would typically come from a database or CMS
 const projects = {
+  "stirling": {
+    title: "Stirling Engine",
+    description: ".",
+    fullDescription: `
+    • Machined a thermodynamic Stirling engine from Aluminum and Brass stock as part of the MIT Pappalardo Appretice Program. 
+    • Referenced Machinery's Handbook 19th Edition for Speeds, Feeds, and Thread Standards.
+    `,
+    images: ["/Site_Images/Stirling_Engine/SA_003.jpg", "/Site_Images/Stirling_Engine/SA_004.jpg", "/Site_Images/Stirling_Engine/SA_006.jpg", "/Site_Images/Stirling_Engine/SA_005.jpg"],
+    tags: ["Speeds and Feeds", "Machining", "Mill", "Lathe"],
+    date: "Spring 2026",
+    pdf: "",
+    youtube:"",
+  },
   "cbd": {
     title: "Thermal and Force Load Isolation",
     description: ".",
